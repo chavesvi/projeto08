@@ -2,22 +2,22 @@ package entities;
 
 public class Aluguel {
 	
-	private String nome;
+	private String name;
 	private String email;
 	private int num;
 	
-	public Aluguel(String nome, String email, int num) {
-		this.nome = nome;
+	public Aluguel(String name, String email, int num) {
+		this.name = name;
 		this.email = email;
 		this.num = num;
 	}
 
 	public String getNome() {
-		return nome;
+		return name;
 	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setNome(String name) {
+		this.name = name;
 	}
 
 	public String getEmail() {
@@ -37,7 +37,7 @@ public class Aluguel {
 	}
 	
 	public String toString() {
-		return num + ": " + nome + ", " + email;
+		return num + ": " + name + ", " + email;
 	}
 	
 
