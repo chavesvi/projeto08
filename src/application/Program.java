@@ -34,14 +34,11 @@ public class Program {
 			System.out.println();
 		}
 		
-		
 		for (int i=0; i<quartos.length; i++) {
 			if (quartos[i] != null) {
 				System.out.println(quartos[i].toString());
 			}
 		}
-		
-		
 		
 		sc.close();
 
