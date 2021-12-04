@@ -12,11 +12,11 @@ public class Aluguel {
 		this.num = num;
 	}
 
-	public String getNome() {
+	public String getName() {
 		return name;
 	}
 
-	public void setNome(String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 

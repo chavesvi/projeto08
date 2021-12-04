@@ -12,31 +12,31 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		Aluguel[] quartos = new Aluguel[10];
+		Aluguel[] room = new Aluguel[10];
 		
-		System.out.print("Informe a quantidade de alunos que alugarão um quarto: ");
+		System.out.print("Enter the number of students who will rent a room: ");
 		int n = sc.nextInt();
 		
 		for (int i=0; i<n; i++) {
-			System.out.print("Nome do aluno(a): ");
+			System.out.print("Name of student: ");
 			sc.nextLine();
-			String nome = sc.nextLine();
+			String name = sc.nextLine();
 			System.out.print("Email: ");
 			String email = sc.nextLine();
-			System.out.print("Número do quarto: ");
+			System.out.print("Number of room: ");
 			int num = sc.nextInt();
-			while (quartos[num] != null) {
-				System.out.println("QUARTO OCUPADO!");
-				System.out.print("Escolha outro quarto: ");
+			while (room[num] != null) {
+				System.out.println("ROOM OCCUPIED!");
+				System.out.print("Choose another room: ");
 				num = sc.nextInt();
 			}
-			quartos[num] = new Aluguel(nome, email, num);
+			room[num] = new Aluguel(name, email, num);
 			System.out.println();
 		}
 		
-		for (int i=0; i<quartos.length; i++) {
-			if (quartos[i] != null) {
-				System.out.println(quartos[i].toString());
+		for (int i=0; i<room.length; i++) {
+			if (room[i] != null) {
+				System.out.println(room[i].toString());
 			}
 		}
 		
